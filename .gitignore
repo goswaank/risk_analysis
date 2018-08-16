@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+## My files
+./risk_analysis/reference_data/glove_data/
+./.git
