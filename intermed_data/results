@@ -1,0 +1,93 @@
+#######################################################################
+########### CASE 1 
+Train Data : News Articles
+Test Data : News Articles
+Classifier : SVC
+train_acc :  0.9963099631
+test_acc :  0.424778761062
+
+#######################################################################
+########### CASE 2 
+Train Data : News Articles
+Test Data : News Articles
+Classifier : LR
+train_acc :  0.342435424354
+test_acc :  0.265486725664
+
+#######################################################################
+########### CASE 3 
+Train Data : News Articles
+Test Data : Tweets
+Classifier : SVC
+------------------- text direct
+train_acc :  0.996126175982
+test_acc :  0.0715
+------------------- word_bag
+train_acc :  0.996126175982
+test_acc :  0.0
+
+#######################################################################
+########### CASE 4 
+Train Data : News Articles
+Test Data : Tweets
+Classifier : LR
+--------------- text direct
+train_acc :  0.372993912562
+test_acc :  0.002
+--------------- word bag
+train_acc :  0.372993912562
+test_acc :  0.0
+
+#######################################################################
+########### CASE 5 
+Train Data : TWEETS
+Test Data : Tweets
+Classifier : SVC
+-------------text direct
+train_acc :  0.991333333333
+test_acc :  0.762
+--------------word_bag
+train_acc :  0.981333333333
+test_acc :  0.782
+
+#######################################################################
+########### CASE 6 
+Train Data : TWEETS
+Test Data : Tweets
+Classifier : LR
+--------------text direct
+train_acc :  0.8
+test_acc :  0.768
+------------- word_bag
+train_acc :  0.795333333333
+test_acc :  0.782
+
+#######################################################################
+########### CASE 7 
+Classifier: Cosine Similarity
+Keywords Source : News_Keywords
+accuracy_pos :  0.705
+accuracy_both :  0.52
+f1_pos :  0.745205679111
+f1_both :  0.618347922311
+
+#######################################################################
+########### CASE 8
+Classifier: Cosine Similarity
+Keywords Source : Tweets
+accuracy_pos :  0.705
+accuracy_both :  0.52
+f1_pos :  0.745205679111
+f1_both :  0.618347922311
+
+######################################################################
+########## CASE 9 : 
+Training Data : Both News and Tweet Data 
+Test Data : Tweet Data
+################################ BOTH
+acc_both :  0.6203341642000312
+################################ POS
+acc_pos :  0.7753673988679441
+############################### SVC
+Train_Accuracy :  0.991709598925
+Test_Accuracy :  0.784538090045

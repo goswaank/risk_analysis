@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sftp://onespace@172.29.33.45:22/home/onespace/anaconda3/envs/caispp/bin/python" />
+      </list>
+    </list>
+  </component>
+</project>
