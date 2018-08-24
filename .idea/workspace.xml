@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f60cda-1231-43f4-ad86-270d08d70af9" name="Default" comment="24 Aug Commit">
-      <change afterPath="$PROJECT_DIR$/distanceTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/risk_analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/risk_analysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyword_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyword_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/personal_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/test_bkup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/test_classifier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/tmp.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/tmp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/tmp_ortho.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <ignored path="reference_data/glove_data/" />
@@ -75,12 +63,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="md" value="44" />
           <entry key="py" value="1523" />
           <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Markdown" value="44" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="Python" value="1523" />
         </counts>
@@ -88,12 +78,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
+          <entry key="md" value="1" />
           <entry key="py" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="Python" value="13" />
         </counts>
       </usages-collector>
@@ -134,9 +126,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -227,7 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lrf/secondSweep.py" />
         <option value="$PROJECT_DIR$/lrf/testClassifier.py" />
         <option value="$PROJECT_DIR$/lrf/classify.py" />
         <option value="$PROJECT_DIR$/intermed_data/testTweet.txt" />
@@ -278,6 +285,7 @@
         <option value="$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py" />
         <option value="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" />
         <option value="$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -309,7 +317,27 @@
             <path>
               <item name="risk_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="risk_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="metrics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="risk_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="risk_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="reference_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="risk_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="risk_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -705,13 +733,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/intermed_data/intermed_dict.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="150">
-          <caret column="2606" selection-start-column="2588" selection-end-column="2606" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/keyword_generation_micromort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1054,7 +1075,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
