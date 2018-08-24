@@ -3,5 +3,9 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5 (caispp_local)" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5 virtualenv at ~/workspace/risk_analysis/venv" project-jdk-type="Python SDK" />
+>>>>>>> 9af9d4b1e982bbca90d4f5989640d5baa4cc6377
 </project>

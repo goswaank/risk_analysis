@@ -1,8 +1,10 @@
-from lrf.tweet_classifier import unsupervised, supervised
-from lrf.utilities import datasets, utility
+from lrf import supervised
+from lrf import unsupervised
+from lrf import datasets
 import pandas as pd
 import sklearn
 from sklearn.model_selection import KFold
+from lrf import utility
 from lrf import keyword_generator
 from lrf.metric import calculate_accuracy as ca, calculate_f_measure as cf
 from statistics import mean
@@ -44,13 +46,13 @@ def classify_bkp(classifier_type, X_train, Y_train=None,X_test=None, Y_test=None
 
         if class_map is not None:
 
-            fitted_binarizer, Y_train_binary = utility.binarize_data(Y_train, class_mapping=class_map)
+            fitted_binarizer, Y_train_binary = utility.binarize_data(Y_train,class_mapping=class_map)
         else:
             fitted_binarizer, Y_train_binary = utility.binarize_data(Y_train)
 
         if Y_test is not None:
 
-            f, Y_test_binary = utility.binarize_data(Y_test, class_mapping=class_map)
+            f, Y_test_binary = utility.binarize_data(Y_test,class_mapping=class_map)
 
         if is_X_text == True:
             tf_idf_vectorizer = utility.get_tf_idf_vectorizer(X_train)
@@ -158,7 +160,7 @@ def get_classification_model(classifier_type,X_train,Y_train):
 
 ########################### Definition of Main function
 def main():
-    news_dict = datasets.get_news_data(folder_name='keyword_data', file_name='annotator_data_dump_with_text')
+    news_dict = datasets.get_news_data(folder_name='keyword_data',file_name='annotator_data_dump_with_text')
     # train_data, test_data = utility.split_data(news_dict)
     category_names = ['text','category']
     category_names_news = ['text', 'category']

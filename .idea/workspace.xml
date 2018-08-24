@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f60cda-1231-43f4-ad86-270d08d70af9" name="Default" comment="24 Aug Commit">
-      <change beforePath="$PROJECT_DIR$/reference_data/glove_data/glove.twitter.27B.100d.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference_data/glove_data/glove.twitter.27B.200d.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference_data/glove_data/glove.twitter.27B.25d.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference_data/glove_data/glove.twitter.27B.50d.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/distanceTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/risk_analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/risk_analysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyword_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyword_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/personal_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/test_bkup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/test_classifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/tmp.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/tmp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/tmp_ortho.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <ignored path="reference_data/glove_data/" />
@@ -79,13 +88,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="py" value="7" />
+          <entry key="py" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -93,24 +102,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-411">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="296" column="50" lean-forward="true" selection-start-line="296" selection-start-column="50" selection-end-line="296" selection-end-column="50" />
+            <state relative-caret-position="-464">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_f_measure.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/classifier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -130,33 +156,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1219">
               <caret line="54" column="84" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/keyword_generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1380">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intermed_data/results">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -334,11 +333,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lrf/configs" />
+      <recent name="$PROJECT_DIR$/lrf/tweet_classifier" />
+      <recent name="$PROJECT_DIR$/lrf/metric" />
       <recent name="$PROJECT_DIR$/lrf/load_scripts" />
       <recent name="$PROJECT_DIR$/lrf/utilities" />
-      <recent name="$PROJECT_DIR$/lrf/tweet_classifier" />
-      <recent name="$PROJECT_DIR$/lrf/tweet_preprocessing" />
-      <recent name="$PROJECT_DIR$/lrf/keyword_generator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -574,12 +573,12 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757412" weight="0.33472803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997955" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32991803" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3294979" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294979" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294979" />
       <window_info anchor="bottom" id="File Transfer" order="10" weight="0.32889345" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32845187" />
@@ -592,32 +591,6 @@
       <window_info anchor="right" x="2635" y="213" width="554" height="649" id="SciView" order="4" weight="0.2986523" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2393531" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32924336" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49757412" visible="true" weight="0.335041" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997955" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991803" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991803" />
-      <window_info anchor="bottom" id="File Transfer" order="10" weight="0.32889345" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32924336" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50242585" side_tool="true" weight="0.335041" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.2522911" />
-      <window_info anchor="right" x="2635" y="213" width="554" height="649" id="SciView" order="4" visible="true" weight="0.2986523" />
-      <window_info anchor="right" id="Database" order="5" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -732,41 +705,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lrf/tweet_preprocessing/tweet_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference_data/keyword_data/annotator_data_dump_with_text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="1" column="1054" lean-forward="true" selection-start-line="1" selection-start-column="1054" selection-end-line="1" selection-end-column="1054" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/unsupervised.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_f_measure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1176182562/1065451459/pandas/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="1979" selection-start-line="1979" selection-end-line="1979" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intermed_data/intermed_dict.json">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="150">
@@ -785,13 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="49" selection-start-column="49" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -916,6 +847,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="345" column="26" selection-start-line="345" selection-start-column="26" selection-end-line="345" selection-end-column="26" />
+          <folding>
+            <element signature="e#29#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,13 +1017,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="296" column="50" lean-forward="true" selection-start-line="296" selection-start-column="50" selection-end-line="296" selection-end-column="50" />
+        <state relative-caret-position="-464">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_f_measure.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/feature_selection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
