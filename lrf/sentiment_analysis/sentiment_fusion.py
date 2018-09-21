@@ -89,6 +89,7 @@ def execute_fusion():
 
     microblogging_features = []
     lexicon_features = []
+    print(more_tweet_feat)
     for elem in more_tweet_feat:
         lexicon_features.append(elem['lexicon_features'])
         microblogging_features.append(elem['microblogging_features'])

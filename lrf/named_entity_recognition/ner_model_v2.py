@@ -162,7 +162,7 @@ def get_orthographic_word(word):
 if __name__=='__main__':
 
     ## Data Paths and Locations
-    data_location = '../reference_data/ner_data'
+    data_location = '../../reference_data/ner_data'
     train_file_name = "ner_train"
     validation_file_name = "ner_dev"
     test_file_name = "ner_test"

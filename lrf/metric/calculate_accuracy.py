@@ -1,9 +1,8 @@
 def calculate_accuracy(predictedData,targetData):
     correct_count = 0
     total_count = 0
-    for item in predictedData.keys():
-
-        if predictedData[item]==targetData.get_value(item):
+    for i,item in enumerate(predictedData):
+        if predictedData[i]==targetData[i]:
             correct_count = correct_count+1
         total_count = total_count + 1
 

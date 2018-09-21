@@ -46,6 +46,8 @@ class RepeatReplacer(object):
     'ooh'
     'goose'
     """
+    # import nltk
+    # nltk.download('wordnet')
 
     def __init__(self):
         self.repeat_regexp = re.compile(r'(\w*)(\w)\2(\w*)')

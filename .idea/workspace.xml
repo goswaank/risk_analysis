@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f60cda-1231-43f4-ad86-270d08d70af9" name="Default" comment="24 Aug Commit">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lrf/utilities/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier_data_n_model/classified_tweets.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/classifier_data_n_model/classified_tweets.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/.~lock.project_detailed_view.odt#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/project_detailed_view.odt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/project_detailed_view.odt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermed_data/risk_category_file.json" beforeDir="false" afterPath="$PROJECT_DIR$/intermed_data/risk_category_file.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/keyword_generator/keyword_generation_micromort.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/keyword_generator/keyword_generation_micromort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/keyword_generator/keyword_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/keyword_generator/keyword_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/metric/calculate_accuracy.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/metric/calculate_accuracy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/metric/calculate_f_measure.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/metric/calculate_f_measure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/tweet_classifier/unsupervised.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/tweet_classifier/unsupervised.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/utilities/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/utilities/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/utilities/replacers.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/utilities/replacers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lrf/utilities/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/lrf/utilities/utility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference_data/sentiment_data/more_tweet_features.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data/sentiment_data/more_tweet_features.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference_data/sentiment_data/tweets_processed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data/sentiment_data/tweets_processed.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <ignored path="reference_data/glove_data/" />
@@ -19,18 +41,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/risk_analysis$tweet_classifying_script.coverage" NAME="tweet_classifying_script Coverage Results" MODIFIED="1535113500347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/tweet_classifier" />
+    <SUITE FILE_PATH="coverage/risk_analysis$tweet_classifying_script.coverage" NAME="tweet_classifying_script Coverage Results" MODIFIED="1536546260126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/tweet_classifier" />
     <SUITE FILE_PATH="coverage/risk_analysis$one_time_load.coverage" NAME="one_time_load Coverage Results" MODIFIED="1532082475522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
+    <SUITE FILE_PATH="coverage/risk_analysis$sentiment_ml_classifier.coverage" NAME="sentiment_ml_classifier Coverage Results" MODIFIED="1536567100956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/sentiment_analysis" />
     <SUITE FILE_PATH="coverage/risk_analysis$keyword_generation_micromort.coverage" NAME="keyword_generation_micromort Coverage Results" MODIFIED="1531121158014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$personalFile.coverage" NAME="personalFile Coverage Results" MODIFIED="1530091675811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$lrf_config.coverage" NAME="lrf_config Coverage Results" MODIFIED="1534843404033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/configs" />
-    <SUITE FILE_PATH="coverage/risk_analysis$sentiment_preprocessing.coverage" NAME="sentiment_preprocessing Coverage Results" MODIFIED="1532705784610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
+    <SUITE FILE_PATH="coverage/risk_analysis$sentiment_preprocessing.coverage" NAME="sentiment_preprocessing Coverage Results" MODIFIED="1536572448592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/sentiment_analysis" />
     <SUITE FILE_PATH="coverage/risk_analysis$Doctest_AntonymReplacer_replace_negations.coverage" NAME="Doctest AntonymReplacer.replace_negations Coverage Results" MODIFIED="1532432652657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
+    <SUITE FILE_PATH="coverage/risk_analysis$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1535854806938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$feature_selection.coverage" NAME="feature_selection Coverage Results" MODIFIED="1530865441191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
-    <SUITE FILE_PATH="coverage/risk_analysis$test.coverage" NAME="test Coverage Results" MODIFIED="1534507192436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
+    <SUITE FILE_PATH="coverage/risk_analysis$test.coverage" NAME="test Coverage Results" MODIFIED="1535862529776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/utilities" />
     <SUITE FILE_PATH="coverage/risk_analysis$test_again__1_.coverage" NAME="test_again (1) Coverage Results" MODIFIED="1534401178663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
     <SUITE FILE_PATH="coverage/risk_analysis$datasets.coverage" NAME="datasets Coverage Results" MODIFIED="1532594101962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
-    <SUITE FILE_PATH="coverage/risk_analysis$keyword_generator.coverage" NAME="keyword_generator Coverage Results" MODIFIED="1535097035010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/keyword_generator" />
+    <SUITE FILE_PATH="coverage/risk_analysis$keyword_generator.coverage" NAME="keyword_generator Coverage Results" MODIFIED="1535862611435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/keyword_generator" />
     <SUITE FILE_PATH="coverage/risk_analysis$process_text.coverage" NAME="process_text Coverage Results" MODIFIED="1531211111431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$tweet_processing.coverage" NAME="tweet_processing Coverage Results" MODIFIED="1531113676694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$replacers.coverage" NAME="replacers Coverage Results" MODIFIED="1532424197642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
@@ -38,18 +62,19 @@
     <SUITE FILE_PATH="coverage/risk_analysis$oneTimeLoad.coverage" NAME="oneTimeLoad Coverage Results" MODIFIED="1530168713515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$test_again.coverage" NAME="test_again Coverage Results" MODIFIED="1534755273242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$sarcasm_detection.coverage" NAME="sarcasm_detection Coverage Results" MODIFIED="1532682351507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
-    <SUITE FILE_PATH="coverage/risk_analysis$classifier.coverage" NAME="classifier Coverage Results" MODIFIED="1532665111832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$ner_preprocessing.coverage" NAME="ner_preprocessing Coverage Results" MODIFIED="1533811745991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
-    <SUITE FILE_PATH="coverage/risk_analysis$sentiment_fusion.coverage" NAME="sentiment_fusion Coverage Results" MODIFIED="1533021480226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
+    <SUITE FILE_PATH="coverage/risk_analysis$classifier.coverage" NAME="classifier Coverage Results" MODIFIED="1535885354768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/tweet_classifier" />
+    <SUITE FILE_PATH="coverage/risk_analysis$calculate_f_measure.coverage" NAME="calculate_f_measure Coverage Results" MODIFIED="1536489629770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/metric" />
+    <SUITE FILE_PATH="coverage/risk_analysis$sentiment_fusion.coverage" NAME="sentiment_fusion Coverage Results" MODIFIED="1536577461075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/sentiment_analysis" />
     <SUITE FILE_PATH="coverage/risk_analysis$risk_categories.coverage" NAME="risk_categories Coverage Results" MODIFIED="1529641252377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$test_bkup.coverage" NAME="test_bkup Coverage Results" MODIFIED="1532694562118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$secondSweep.coverage" NAME="secondSweep Coverage Results" MODIFIED="1530703093523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$supervised.coverage" NAME="supervised Coverage Results" MODIFIED="1531133595679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
-    <SUITE FILE_PATH="coverage/risk_analysis$ner_model_v2.coverage" NAME="ner_model_v2 Coverage Results" MODIFIED="1534754658808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
+    <SUITE FILE_PATH="coverage/risk_analysis$ner_model_v2.coverage" NAME="ner_model_v2 Coverage Results" MODIFIED="1536578222008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/named_entity_recognition" />
     <SUITE FILE_PATH="coverage/risk_analysis$testClassifier.coverage" NAME="testClassifier Coverage Results" MODIFIED="1530766378194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$utility.coverage" NAME="utility Coverage Results" MODIFIED="1530947868818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$driver.coverage" NAME="driver Coverage Results" MODIFIED="1531905555618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
-    <SUITE FILE_PATH="coverage/risk_analysis$keywords_wrapper.coverage" NAME="keywords_wrapper Coverage Results" MODIFIED="1531105738605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
+    <SUITE FILE_PATH="coverage/risk_analysis$keywords_wrapper.coverage" NAME="keywords_wrapper Coverage Results" MODIFIED="1535857386938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf/keyword_generator" />
     <SUITE FILE_PATH="coverage/risk_analysis$ner_model.coverage" NAME="ner_model Coverage Results" MODIFIED="1533884171496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
     <SUITE FILE_PATH="coverage/risk_analysis$tweetProcessing.coverage" NAME="tweetProcessing Coverage Results" MODIFIED="1530174854655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lrf" />
   </component>
@@ -90,37 +115,114 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1164576309">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="9" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="iml" value="1" />
+          <entry key="json" value="1" />
+          <entry key="py" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="Python" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="4301" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="4301" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py">
+        <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-464">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="2655">
+              <caret line="187" column="2" selection-start-line="187" selection-start-column="2" selection-end-line="187" selection-end-column="2" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_f_measure.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/classifier.py">
+        <entry file="file://$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="75">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lrf/utilities/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2130">
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lrf/utilities/replacers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/nltk/corpus/util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="129" column="54" selection-start-line="129" selection-start-column="54" selection-end-line="129" selection-end-column="54" />
+              <folding>
+                <element signature="e#17#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,52 +232,16 @@
         <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              </first_editor>
-              <second_editor />
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py">
+        <entry file="file://$PROJECT_DIR$/lrf/configs/lrf_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
-              <folding>
-                <element signature="e#17#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1219">
-              <caret line="54" column="84" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lrf/utilities/datasets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="24" selection-start-line="3" selection-start-column="4" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -191,20 +257,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>train_and_predict</find>
-      <find>PassiveAggressiveClassifier</find>
-      <find>17</find>
-      <find>21</find>
-      <find>best_model_feature_curve</find>
-      <find>exec</find>
-      <find>hist</find>
-      <find>GLOVE</find>
       <find>re</find>
       <find>ortho</find>
       <find>train_tf</find>
       <find>train_tweets</find>
       <find>loc</find>
-      <find>get</find>
       <find>feature</find>
       <find>binar</find>
       <find>select_top_k_features</find>
@@ -213,14 +270,23 @@
       <find>time</find>
       <find>lower</find>
       <find>binarizer</find>
-      <find>exit</find>
-      <find>print</find>
       <find>tqdm</find>
       <find>predict_and_classify</find>
       <find>best_model_selection</find>
       <find>get_best_model</find>
       <find>negate</find>
       <find>stop</find>
+      <find>wordc</find>
+      <find>show_wordcloud</find>
+      <find>print</find>
+      <find>get</find>
+      <find>keyword</find>
+      <find>exit</find>
+      <find>classified_tweets.pkl</find>
+      <find>enchant</find>
+      <find>start</find>
+      <find>out</find>
+      <find>cons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,17 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lrf/testClassifier.py" />
-        <option value="$PROJECT_DIR$/lrf/classify.py" />
-        <option value="$PROJECT_DIR$/intermed_data/testTweet.txt" />
-        <option value="$PROJECT_DIR$/lrf/test_classifier_class.py" />
-        <option value="$PROJECT_DIR$/reference_data/keyword_data/annotator_data_dump_with_text" />
-        <option value="$PROJECT_DIR$/lrf/feature_selection.py" />
-        <option value="$PROJECT_DIR$/lrf/keywords_wrapper.py" />
-        <option value="$PROJECT_DIR$/lrf/keyword_generation_micromort.py" />
-        <option value="$PROJECT_DIR$/keyword_generator.py" />
-        <option value="$PROJECT_DIR$/lrf/process_text.py" />
-        <option value="$PROJECT_DIR$/lrf/test_classifier.py" />
         <option value="$PROJECT_DIR$/lrf/tweet_processing.py" />
         <option value="$PROJECT_DIR$/lrf/random_sampler.py" />
         <option value="$PROJECT_DIR$/lrf/calculate_accuracy.py" />
@@ -281,11 +336,22 @@
         <option value="$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v3_ortho.py" />
         <option value="$PROJECT_DIR$/intermed_data/tweet_truth.txt" />
         <option value="$PROJECT_DIR$/lrf/configs/lrf_config.py" />
-        <option value="$PROJECT_DIR$/lrf/utilities/utility.py" />
-        <option value="$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py" />
-        <option value="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" />
-        <option value="$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lrf/utilities/utility.py" />
+        <option value="$PROJECT_DIR$/lrf/keyword_generator/keyword_generation_micromort.py" />
+        <option value="$PROJECT_DIR$/lrf/utilities/test.py" />
+        <option value="$PROJECT_DIR$/lrf/keyword_generator/keyword_generator.py" />
+        <option value="$PROJECT_DIR$/lrf/tweet_classifier/classifier.py" />
+        <option value="$PROJECT_DIR$/lrf/metric/calculate_f_measure.py" />
+        <option value="$PROJECT_DIR$/lrf/metric/calculate_accuracy.py" />
+        <option value="$PROJECT_DIR$/lrf/tweet_classifier/unsupervised.py" />
+        <option value="$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py" />
+        <option value="$PROJECT_DIR$/lrf/utilities/replacers.py" />
+        <option value="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py" />
+        <option value="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py" />
+        <option value="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py" />
+        <option value="$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py" />
+        <option value="$PROJECT_DIR$/lrf/utilities/constants.py" />
       </list>
     </option>
   </component>
@@ -296,17 +362,50 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1922" />
-    <option name="y" value="11" />
-    <option name="width" value="1853" />
-    <option name="height" value="1076" />
+    <option name="x" value="81" />
+    <option name="y" value="-4" />
+    <option name="width" value="1199" />
+    <option name="height" value="964" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="risk_analysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="lrf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="lrf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="named_entity_recognition" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="lrf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="utilities" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="risk_analysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,7 +442,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,12 +452,15 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/reference_data/glove_data/glove.twitter.27B.50d.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="python.debugger.dataview.coloredbydefault" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lrf" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lrf/configs" />
       <recent name="$PROJECT_DIR$/lrf/tweet_classifier" />
@@ -380,51 +481,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tweet_classifying_script">
-    <configuration name="keyword_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="risk_analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf/keyword_generator" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lrf/keyword_generator/keyword_generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lrf_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="risk_analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf/configs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lrf/configs/lrf_config.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ner_model_v2">
     <configuration name="ner_model_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="risk_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -433,7 +490,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf/named_entity_recognition" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -447,7 +504,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_again" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sentiment_fusion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="risk_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -455,12 +512,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf/sentiment_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v3_ortho.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sentiment_ml_classifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="risk_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf/sentiment_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sentiment_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="risk_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf/sentiment_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -478,7 +579,7 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lrf/tweet_classifier" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -492,19 +593,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ner_model_v2" />
-      <item itemvalue="Python.test_again" />
       <item itemvalue="Python.tweet_classifying_script" />
-      <item itemvalue="Python.lrf_config" />
-      <item itemvalue="Python.keyword_generator" />
+      <item itemvalue="Python.sentiment_fusion" />
+      <item itemvalue="Python.sentiment_ml_classifier" />
+      <item itemvalue="Python.sentiment_preprocessing" />
+      <item itemvalue="Python.ner_model_v2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tweet_classifying_script" />
-        <item itemvalue="Python.keyword_generator" />
-        <item itemvalue="Python.lrf_config" />
-        <item itemvalue="Python.test_again" />
         <item itemvalue="Python.ner_model_v2" />
+        <item itemvalue="Python.sentiment_fusion" />
+        <item itemvalue="Python.sentiment_preprocessing" />
+        <item itemvalue="Python.sentiment_ml_classifier" />
+        <item itemvalue="Python.tweet_classifying_script" />
       </list>
     </recent_temporary>
   </component>
@@ -592,15 +693,44 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="81" y="-4" width="1839" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24212272" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31344116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32924336" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757412" weight="0.33472803" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997955" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4969325" visible="true" weight="0.333682" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39952153" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3294979" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294979" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294979" />
+      <window_info anchor="bottom" id="File Transfer" order="10" weight="0.32889345" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32845187" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3294979" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5030675" side_tool="true" visible="true" weight="0.333682" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.2522911" />
+      <window_info anchor="right" x="2635" y="213" width="554" height="649" id="SciView" order="4" visible="true" weight="0.06804239" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2822086" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32924336" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49757412" visible="true" weight="0.333682" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39952153" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3294979" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294979" />
@@ -616,9 +746,11 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.2522911" />
-      <window_info anchor="right" x="2635" y="213" width="554" height="649" id="SciView" order="4" weight="0.2986523" />
+      <window_info anchor="right" x="2635" y="213" width="554" height="649" id="SciView" order="4" weight="0.06851691" />
       <window_info anchor="right" id="Database" order="5" />
-    </layout>
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -674,52 +806,52 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>93</line>
+          <line>95</line>
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>94</line>
+          <line>96</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>96</line>
+          <line>98</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>97</line>
+          <line>99</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>98</line>
+          <line>100</line>
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>100</line>
+          <line>102</line>
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>103</line>
+          <line>105</line>
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>102</line>
+          <line>104</line>
           <option name="timeStamp" value="243" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>104</line>
+          <line>106</line>
           <option name="timeStamp" value="244" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lrf/utilities/replacers.py</url>
-          <line>105</line>
+          <line>107</line>
           <option name="timeStamp" value="245" />
         </line-breakpoint>
       </breakpoints>
@@ -733,93 +865,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/keyword_generation_micromort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1176182562/1065451459/nltk/metrics/distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/test_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/utilities/replacers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/utilities/removers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/test_bkup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1176182562/1065451459/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="432" selection-start-line="432" selection-end-line="432" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermed_data/tweets_classified.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="49547" column="163" selection-start-line="49547" selection-start-column="111" selection-end-line="49547" selection-end-column="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/2145201052/367282501/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="1696" selection-start-line="1696" selection-end-line="1696" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/2145201052/367282501/keras/layers/wrappers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="163" column="61" lean-forward="true" selection-start-line="163" selection-start-column="61" selection-end-line="163" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lrf/named_entity_recognition/ner_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-351">
@@ -838,13 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/utilities/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -868,9 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="345" column="26" selection-start-line="345" selection-start-column="26" selection-end-line="345" selection-end-column="26" />
-          <folding>
-            <element signature="e#29#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,13 +930,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/test.py" />
     <entry file="file://$PROJECT_DIR$/intermed_data/tweet_truth.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -909,31 +938,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/feature_extraction/text.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/feature_extraction/text.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/feature_selection/base.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/svm/base.py" />
+    <entry file="file://$PROJECT_DIR$/intermed_data/glove_subset.json">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermed_data/results">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="1386" column="8" selection-start-line="1386" selection-start-column="8" selection-end-line="1386" selection-end-column="8" />
+        <state relative-caret-position="246">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/feature_selection/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/linear_model/base.py" />
+    <entry file="file://$PROJECT_DIR$/lrf/feature_selection.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/svm/base.py">
+    <entry file="file://$PROJECT_DIR$/lrf/utilities/datasets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="148" column="24" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="24" />
+        <state relative-caret-position="105">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp/lib/python3.5/site-packages/sklearn/multiclass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp/lib/python3.5/site-packages/wordcloud/wordcloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="379" selection-start-line="379" selection-end-line="379" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermed_data/risk_category_file.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/keyword_generation_micromort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="176" lean-forward="true" selection-start-line="167" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/utilities/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/keywords_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp/lib/python3.5/site-packages/sklearn/metrics/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="70" selection-start-line="70" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3570">
+          <caret line="343" column="69" selection-start-line="343" selection-start-column="69" selection-end-line="343" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/keyword_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/unsupervised.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2115">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_f_measure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/caispp/lib/python3.5/site-packages/scipy/sparse/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7087">
+          <caret line="646" selection-start-line="646" selection-end-line="646" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/supervised.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/nltk/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="672" selection-start-line="672" selection-end-line="672" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/risk_analysis.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/utilities/utility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2895">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="187" column="2" selection-start-line="187" selection-start-column="2" selection-end-line="187" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/utilities/replacers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/nltk/corpus/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="129" column="54" selection-start-line="129" selection-start-column="54" selection-end-line="129" selection-end-column="54" />
+          <folding>
+            <element signature="e#17#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -944,150 +1162,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/classifier.py">
+    <entry file="file://$PROJECT_DIR$/lrf/utilities/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermed_data/glove_subset.json">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/utilities/utility.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/named_entity_recognition/ner_model_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-411">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/keyword_generator/keyword_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_fusion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1380">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermed_data/results">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/utilities/datasets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_ml_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
-          <folding>
-            <element signature="e#17#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/sentiment_analysis/sentiment_preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1219">
-          <caret line="54" column="84" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/caispp_local/lib/python3.5/site-packages/sklearn/linear_model/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="304" selection-start-line="304" selection-end-line="304" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/tweet_classifying_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-464">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_f_measure.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/tweet_classifier/classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/metric/calculate_accuracy.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/feature_selection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lrf/configs/connection_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="270">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>

@@ -235,9 +235,83 @@ def best_model_selection(x_tweet_data, y_tweet_data, x_news_data,y_news_data ,mo
 
     return classifier_model, p, r, f, acc
 
+#################### Unsupervised Model
+
+def extract_keywords(x_tweet_data,y_tweet_data, x_news_data, y_news_data):
+
+    from lrf.tweet_classifier.unsupervised import UnsupervisedClassifiers
+    from lrf.keyword_generator import keyword_generator
+    from lrf.metric import calculate_accuracy as ca
+    from lrf.metric import calculate_f_measure as cf
+    from sklearn.externals import joblib
+
+    n_splits = 5
+
+
+
+    classifier = UnsupervisedClassifiers.CosineSimilarity()
+
+    kf = KFold(n_splits=n_splits)
+
+    x_tweet_data = x_tweet_data
+    x_news_data = x_news_data
+
+    y_tweet_data = np.asarray(y_tweet_data)
+    y_news_data = np.asarray(y_news_data)
+
+    t1 = time.time()
+
+    f_list_pos = []
+    acc_pos = []
+    f_list_both = []
+    acc_both = []
+
+
+    # for train, test in kf.split(x_tweet_data):
+    #
+    #     train_data = np.append(x_tweet_data[train], x_news_data, axis=0)
+    #     train_labels = np.append(y_tweet_data[train], y_news_data)
+    #
+    #     test_data = x_tweet_data[test]
+    #     test_labels = y_tweet_data[test]
+    #
+    #     test_labels = [item[0] for item in test_labels]
+    #
+    #     keywords = keyword_generator.keyword_driver('svc', X_train=train_data, Y_train=train_labels,
+    #                                                 num_of_keywords=50)
+    #
+    #     predicted_pos,predicted_both = classifier.classify(test_data, keywords=keywords, vector_type='word_embeddings',
+    #                                                     keyword_type='both', glove_data_file='glove_subset.json',
+    #                                                     glove_key_file='glove_key_subset.json')
+    #
+    #     accuracy_pos = ca.calculate_accuracy(predicted_pos,test_labels)
+    #     accuracy_both = ca.calculate_accuracy(predicted_both, test_labels)
+    #     f_measure_pos = cf.calculate_f_measure(test_labels, predicted_pos)
+    #     f_measure_both = cf.calculate_f_measure(test_labels, predicted_both)
+    #     # print('accuracy_pos : ',accuracy_pos,'\naccuracy_both : ',accuracy_both)
+    #     # print('f_measure_pos : ', f_measure_pos, '\nf_measure_both : ', f_measure_both)
+    #
+    #     acc_pos.append(accuracy_pos)
+    #     acc_both.append(accuracy_both)
+    #     f_list_pos.append(f_measure_pos)
+    #     f_list_both.append(f_measure_both)
+    # print('####################################################################')
+    # print('accuracy_pos : ', np.mean(acc_pos), '\naccuracy_both : ', np.mean(acc_both))
+    # print('f_measure_pos : ', np.mean(f_measure_pos ), '\nf_measure_both : ', np.mean(f_measure_both))
+    #
+    train_data = np.append(x_tweet_data, x_news_data, axis=0)
+    train_labels = np.append(y_tweet_data, y_news_data)
+
+    keywords = keyword_generator.keyword_driver('svc', X_train=train_data, Y_train=train_labels,
+                                                num_of_keywords=50)
+
+    joblib.dump(keywords, filename=os.path.join(output_path, 'keywords.pkl'))
+
+    print('############### KEYWORDS EXTRACTED AND STORED #######################')
+
 
 ###################### Train Model
-def train_model(raw_tweets, raw_news, model_dump_path):
+def train_model(raw_tweets, raw_news, model_dump_path,classifier_type='supervised'):
 
     x_news_data = raw_news['text'].values
     y_news_data = raw_news['category'].values
@@ -245,39 +319,70 @@ def train_model(raw_tweets, raw_news, model_dump_path):
     x_tweet_data = raw_tweets['tweet_cmplt'].values
     y_tweet_data = raw_tweets['class_annotated'].values
 
-    tf_idf_vectorizer, model = get_best_model(x_tweet_data=x_tweet_data,y_tweet_data=y_tweet_data, x_news_data=x_news_data, y_news_data=y_news_data)
+    if classifier_type == 'supervised':
+        tf_idf_vectorizer, model = get_best_model(x_tweet_data=x_tweet_data, y_tweet_data=y_tweet_data,
+                                                  x_news_data=x_news_data, y_news_data=y_news_data)
 
-    from sklearn.externals import joblib
+        from sklearn.externals import joblib
 
-    joblib.dump(model,os.path.join(model_dump_path,'tweet_classifying_model.pkl'))
-    joblib.dump(tf_idf_vectorizer, os.path.join(model_dump_path, 'tf_idf_vectorizer.pkl'))
+        joblib.dump(model, os.path.join(model_dump_path, 'tweet_classifying_model.pkl'))
+        joblib.dump(tf_idf_vectorizer, os.path.join(model_dump_path, 'tf_idf_vectorizer.pkl'))
+
+
+
+    else:
+        ## Unsupervised Training just requires extraction of keywords
+        extract_keywords(x_tweet_data,y_tweet_data, x_news_data, y_news_data)
 
     print('########### Training Complete ###########')
+####################### Unsupervised Classifier ###############
+def unsupervised_classifier(x_tweet_data):
+
+    from lrf.tweet_classifier.unsupervised import UnsupervisedClassifiers
+    from sklearn.externals import joblib
+
+    keywords = joblib.load(os.path.join(output_path, 'keywords.pkl'))
+
+    classifier = UnsupervisedClassifiers.CosineSimilarity()
+    predicted_pos, predicted_both = classifier.classify(x_tweet_data, keywords=keywords, vector_type='word_embeddings',
+                                                        keyword_type='both', glove_data_file='glove_subset.json',
+                                                        glove_key_file='glove_key_subset.json')
+    joblib.dump(predicted_pos,os.path.join(model_dump_path,'unsupervised_classified_tweets.pkl'))
+
+#################### Supervised Classifier ######################
+def supervised_classifier(tweets_list,model_path):
+    classifier = joblib.load(os.path.join(model_path, 'tweet_classifying_model.pkl'))
+    tf_idf_vectorizer = joblib.load(os.path.join(model_path, 'tf_idf_vectorizer.pkl'))
+
+    x_data = tf_idf_vectorizer.transform(tweets_list)
+
+    classified_data = classifier.predict(x_data)
+
+    inv_class_map = {v: k for k, v in class_mapping.items()}
+
+    classified_data = [inv_class_map[elem] for elem in classified_data]
+
+    return classified_data
 
 
 ###################### Classifying Path ###############
-def classify_tweets(tweets_list,model_path, output_path):
+def classify_tweets(tweets_list,model_path, output_path, classifier_type = 'supervised'):
 
     tweets_list = prepare_data(tweets_list)
 
     from sklearn.externals import joblib
 
-    classifier = joblib.load(os.path.join(model_path, 'tweet_classifying_model.pkl'))
-    tf_idf_vectorizer = joblib.load(os.path.join(model_path, 'tf_idf_vectorizer.pkl'))
+    if classifier_type == 'supervised':
+        classified_tweets = supervised_classifier(tweets_list=tweets_list,model_path=model_path)
+    else:
+        classified_tweets = unsupervised_classifier(tweets_list)
 
-    x_data = tf_idf_vectorizer.transform(tweets_list)
-    classified_data = classifier.predict(x_data)
 
-    inv_class_map = {v:k for k,v in class_mapping.items()}
-
-    classified_data = [inv_class_map[elem] for elem in classified_data]
-    # classified_data = zip(tweets_list,classified_data)
-
-    joblib.dump(classified_data,filename=os.path.join(output_path,'classified_tweets.pkl'))
+    joblib.dump(classified_tweets,filename=os.path.join(output_path,'classified_tweets.pkl'))
 
     print('############ CLASSIFICATION COMPLETE ##################')
 
-    return classified_data
+    return classified_tweets
 
 
 
@@ -285,8 +390,6 @@ def classify_tweets(tweets_list,model_path, output_path):
 #################### Main ############################
 if __name__=='__main__':
     from lrf.utilities import datasets
-
-
 
     file_type = 'txt'
     file_name = 'tweet'
@@ -298,13 +401,12 @@ if __name__=='__main__':
 
     ## Training the Model
 
-    # train_model(raw_tweets,raw_news,model_dump_path)
+    # train_model(raw_tweets,raw_news,model_dump_path,classifier_type='unsupervised')
 
     ## Classify new tweets data
 
-    classify_tweets(raw_tweets['tweet_cmplt'],model_dump_path, output_path)
+    classified_tweets = classify_tweets(raw_tweets['tweet_cmplt'],model_dump_path, output_path,classifier_type='unsupervised')
 
     ## Dumping the results
     from sklearn.externals import joblib
     result = joblib.load(os.path.join(output_path,'classified_tweets.pkl'))
-    print('############ CLASSIFICATION COMPLETE ##################')

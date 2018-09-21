@@ -18,10 +18,6 @@ class UnsupervisedClassifiers:
 
                 pos_result,both_result = self.glove_classification(data_dict, keywords, keyword_type, glove_data_file, glove_key_file)
 
-                print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
-                print(set(data_dict.keys()).difference(set(pos_result.keys())))
-                print(set(data_dict.keys()).difference(set(both_result.keys())))
-
             elif vector_type == 'tfidf':
 
                 pos_result,both_result = self.tf_idf_classification(self, data_dict, keywords, 'both')
@@ -111,8 +107,6 @@ class UnsupervisedClassifiers:
         #################################################################
         def glove_classification(self,data_dict,keywords,keyword_type,glove_data_file,glove_key_file):
 
-            print('ENTERED GLOVE_CLASSIFICATION')
-
             locations = lrf_config.get_locations()
 
             glove_data_dict = utility.get_glove_dict(locations['INTERMED_DATA_PATH'] + glove_data_file)
@@ -138,15 +132,15 @@ class UnsupervisedClassifiers:
 
                 neg_risk_dict = glove_crux_neg['risk_dict']
 
-            pos_predictions = {}
+            pos_predictions = []
 
-            both_predictions = {}
+            both_predictions = []
 
-            for id in data_dict.keys():
+            for tweet in data_dict:
 
                 data_lst = []
 
-                for word in data_dict.get_value(id):
+                for word in tweet:
 
                     if word in glove_data_dict:
 
@@ -194,8 +188,8 @@ class UnsupervisedClassifiers:
 
                         output_both = k_both[v_both.index(max(v_both))]
 
-                    pos_predictions[id] = [output_pos]
+                    pos_predictions.append(output_pos)
 
-                    both_predictions[id] = [output_both] if keyword_type == 'both' else None
+                    both_predictions.append(output_both if keyword_type == 'both' else None)
 
             return pos_predictions,both_predictions

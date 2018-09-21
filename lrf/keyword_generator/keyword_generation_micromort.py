@@ -29,7 +29,7 @@ from nltk.corpus import stopwords
 def getNewsData(onlyTrain=False):
     lrf_path = os.getcwd()
     proj_path = os.path.abspath(os.path.join(lrf_path, os.pardir))
-    refDataPath = os.path.join(proj_path, 'reference_data')
+    refDataPath = os.path.join(proj_path, '../reference_data')
     keywordDataPath = os.path.join(refDataPath, 'keyword_data/')
 
     annotated_data = pd.read_csv(keywordDataPath + "annotator_data_dump_with_text")

@@ -100,7 +100,7 @@ def train_and_predict(model, data, labels, transform, select, n_components, more
     return (avg_p / n_splits, avg_r / n_splits, avg_f1 / n_splits)
 
 ########################################################################################################################
-def best_model_feature_curve(model_name, data, labels, print_report, more_data=None, lower_lim=1,upper_lim=100,step=50):
+def best_model_feature_curve(model_name, data, labels, print_report, more_data=None, lower_lim=1,upper_lim=2,step=50):
     if (model_name == 'MultinomialNB'):
         model = MultinomialNB()
     elif (model_name == 'SGD'):
@@ -145,7 +145,7 @@ def best_model_feature_curve(model_name, data, labels, print_report, more_data=N
     plt.legend()
     plt.grid(True)
     plt.xlabel(model_name + " performance with Top-k features using Chi2")
-    outpath = os.path.join(os.getcwd(), 'plots/lrf_sentiment/feature_selection_curve_' + model_name + '.png')
+    outpath = os.path.join(os.getcwd()+'/../../', 'plots/lrf_sentiment/feature_selection_curve_' + model_name + '.png')
     plt.savefig(outpath)
 
     return xaxis,metrics

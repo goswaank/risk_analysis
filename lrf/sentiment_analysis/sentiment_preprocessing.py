@@ -148,6 +148,7 @@ def main():
             more_features.append(tweet_meta_features)
 
 
+
     # Write process tweet text to file
     with open(os.path.join(ref_data_dir, 'tweets_processed.txt'), 'w') as f:
         for tweet in tweets:

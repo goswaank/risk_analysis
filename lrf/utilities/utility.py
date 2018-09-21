@@ -48,7 +48,7 @@ def get_multilabel_binarizer(class_mapping):
 
 #####################################################
 def binarize_data(data,class_mapping=None,binarizer=None):
-
+    print(data)
     if class_mapping is None:
         class_mapping = lrf_config.get_class_map()
 

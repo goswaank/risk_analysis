@@ -1,25 +1,25 @@
-from lrf import supervised
-from lrf import unsupervised
-from lrf import datasets
+from lrf.tweet_classifier import supervised
+from lrf.tweet_classifier import unsupervised
+from lrf.utilities import datasets
 import pandas as pd
 import sklearn
 from sklearn.model_selection import KFold
-from lrf import utility
-from lrf import keyword_generator
+from lrf.utilities import utility
+from lrf.keyword_generator import keyword_generator
 from lrf.metric import calculate_accuracy as ca, calculate_f_measure as cf
 from statistics import mean
 
 
 #########################################################################
 #########################################################################
-def classify(classifier_type, X_train, Y_train=None,X_test=None, Y_test=None ,keywords=None, class_map = None,is_X_text=True):
+def classify_bkp(classifier_type, X_train, Y_train=None,X_test=None, Y_test=None ,keywords=None, class_map = None,is_X_text=True):
     _, Y_train = utility.binarize_data(Y_train, class_mapping=class_map)
     _, Y_test = utility.binarize_data(Y_test, class_mapping=class_map)
     svc_class = supervised.SupervisedClassifier.SvcClassifier()
     Y_pred, train_acc, test_acc = svc_class.classify(X_train, Y_train, X_test, Y_test)
     return Y_pred, train_acc, test_acc
 
-def classify_bkp(classifier_type, X_train, Y_train=None,X_test=None, Y_test=None ,keywords=None, class_map = None,is_X_text=True):
+def classify(classifier_type, X_train, Y_train=None,X_test=None, Y_test=None ,keywords=None, class_map = None,is_X_text=True):
 
     if (classifier_type in ['svc','lr','ada_boost']) :
 
@@ -44,11 +44,14 @@ def classify_bkp(classifier_type, X_train, Y_train=None,X_test=None, Y_test=None
 
         X_test = utility.get_str_from_list(X_test)
 
-        if class_map is not None:
+        # if class_map is not None:
+        #
+        #     fitted_binarizer, Y_train_binary = utility.binarize_data(Y_train,class_mapping=class_map)
+        # else:
+        #     fitted_binarizer, Y_train_binary = utility.binarize_data(Y_train)
 
-            fitted_binarizer, Y_train_binary = utility.binarize_data(Y_train,class_mapping=class_map)
-        else:
-            fitted_binarizer, Y_train_binary = utility.binarize_data(Y_train)
+        print(Y_train)
+        exit(0)
 
         if Y_test is not None:
 
@@ -157,16 +160,13 @@ def get_classification_model(classifier_type,X_train,Y_train):
         classifier = lr_class.get_model(X_train,Y_train)
 
         return classifier
-
+########################### Get Best Model
 ########################### Definition of Main function
 def main():
     news_dict = datasets.get_news_data(folder_name='keyword_data',file_name='annotator_data_dump_with_text')
-    # train_data, test_data = utility.split_data(news_dict)
-    category_names = ['text','category']
-    category_names_news = ['text', 'category']
 
-    # X = news_dict[category_names[0]]
-    # y = news_dict[category_names[1]]
+    category_names = ['tweet_cmplt','class_annotated']
+    category_names_news = ['text', 'category']
 
     twitter_dict = datasets.get_tweet_data('txt', 'tweet_truth.txt')
 
@@ -185,6 +185,9 @@ def main():
     ada_test_list = []
     ada_train_list = []
 
+    news_train = news_dict['text']
+    news_class = news_dict['category']
+
     for train_index, test_index in kf.split(twitter_dict):
         print('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%')
 
@@ -192,8 +195,7 @@ def main():
         Y_train = twitter_dict['class_annotated'].iloc[train_index]
         X_test = twitter_dict['tweet_cmplt'].iloc[test_index]
         Y_test = twitter_dict['class_annotated'].iloc[test_index]
-        news_train = news_dict['text']
-        news_class = news_dict['category']
+
         some_dict['tweet_cmplt'] = X_train.append(news_train)
         some_dict['class_annotated'] = Y_train.append(news_class)
 
@@ -203,10 +205,12 @@ def main():
         ada_train_list.append(ada_train_acc)
         ada_test_list.append(ada_test_acc)
 
+        exit(0)
+
         print('ada_train_list : ',ada_train_list)
         print('ada_test_list : ',ada_test_list)
 
-        keywords = keyword_generator.keyword_driver('svc',some_dict,['tweet_cmplt','class_annotated'],num_of_keywords=50)
+        keywords = keyword_generator.keyword_driver('svc',some_dict['tweet_cmplt'],some_dict['class_annotated'],num_of_keywords=50)
 
         for item in keywords:
             print(item , ' : ',keywords[item])
@@ -215,8 +219,6 @@ def main():
 
         train_acc.append(curr_train_acc)
         test_acc.append(curr_test_acc)
-
-        exit(0)
 
         print('train_acc SVC: ',train_acc)
         print('test_acc SVC: ', test_acc)
